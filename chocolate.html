@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+		<meta name="Author" content="prabhu">
+		<meta name="Description" content="birthday wish">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>gift</title>
+		
+      
+  <!-- Favicon and touch icons -->
+		
+		<link rel="shortcut icon" href="assets/ico/favicon3.png">
+        <link rel="apple-touch-icon-precomposed" sizes="142x140" href="assets/ico/favicon4.png">
+        <link rel="apple-touch-icon-precomposed" sizes="75x75" href="assets/ico/favicon3.png">
+       
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+html,body {
+    background:black;
+	padding:75px;
+}
+.wrap {
+    -webkit-animation: hov 3s linear infinite;
+    -moz-animation: hov 3s linear infinite;
+    animation: hov 3s linear infinite;
+  margin: 0 auto;
+}
+.wrap:before {
+    content:"";
+    position:absolute;
+    top:-10px;
+    right:-10px;
+    height:50px;
+    width:50px;
+    border-radius:50%;
+    background:#222;
+    z-index:8;
+    -webkit-animation: bite 3s linear infinite;
+    -moz-animation: bite 3s linear infinite;
+    animation: bite 3s linear infinite;
+}
+.wrap:after {
+    content:"";
+    position:absolute;
+    top:-15px;
+    right:30px;
+    height:30px;
+    width:30px;
+    border-radius:50%;
+    background:#222;
+    z-index:8;
+    box-shadow: 40px 40px #222;
+    -webkit-animation: bite 3s linear infinite;
+    -moz-animation: bite 3s linear infinite;
+    animation: bite 3s linear infinite;
+}
+.choc {
+    position:absolute;
+    left:5px;
+    top:0;
+    height:300px;
+    width:200px;
+    background:chocolate;
+    box-shadow:inset -5px -5px rgba(0, 0, 0, 0.2), inset 5px 5px rgba(200, 200, 200, 0.2);
+}
+.block:before, .block:after {
+    content:"";
+    position:absolute;
+    top:-10px;
+    left:55px;
+    height:35px;
+    width:35px;
+    border:10px solid black;
+    border-top-color:rgba(200, 200, 200, 0.4);
+    border-left-color:rgba(200, 200, 200, 0.2);
+    border-bottom-color:rgba(0, 0, 0, 0.2);
+    border-right-color:rgba(0, 0, 0, 0.4);
+}
+.block:after {
+    left:120px;
+}
+.wrap {
+    position:relative;
+    height:350px;
+    width:210px;
+    overflow:hidden;
+}
+.wrapper {
+    position:absolute;
+    height:200px;
+    width:100%;
+    background:blue;
+    box-shadow: inset -5px -5px rgba(0, 0, 0, 0.4);
+    top:150px;
+    overflow:hidden;
+    left:0;
+    z-index:8;
+}
+.wrapper:before {
+    content:"Chocolate";
+    position:absolute;
+    font-family:arial;
+    text-transform:uppercase;
+    top:50%;
+    width:160%;
+    left:-25%;
+    -webkit-transform:rotate(-45deg);
+    -ms-transform:rotate(-45deg);
+    transform:rotate(-45deg);
+    height:50px;
+    background:lightblue;
+    box-shadow:inset -5px -5px 0 5px rgba(0, 0, 0, 0.2);
+    text-align:center;
+    font-size:30px;
+}
+.block {
+    margin:10px;
+    margin-top:5px;
+    height:35px;
+    width:35px;
+    position:relative;
+    z-index:6;
+    border:10px solid black;
+    border-top-color:rgba(200, 200, 200, 0.4);
+    border-left-color:rgba(200, 200, 200, 0.2);
+    border-bottom-color:rgba(0, 0, 0, 0.2);
+    border-right-color:rgba(0, 0, 0, 0.4);
+}
+@-webkit-keyframes hov {
+    0% {
+        -webkit-transform:translateY(0);
+        transform:translateY(0)
+    }
+    33% {
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px)
+    }
+    70% {
+        -webkit-transform:translateY(-5px);
+        transform:translateY(-5px)
+    }
+    100% {
+        -webkit-transform:translateY(0);
+        transform:translateY(0)
+    }
+}
+@-moz-keyframes hov {
+    0% {
+        -webkit-transform:translateY(0);
+        transform:translateY(0)
+    }
+    33% {
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px)
+    }
+    70% {
+        -webkit-transform:translateY(-5px);
+        transform:translateY(-5px)
+    }
+    100% {
+        -webkit-transform:translateY(0);
+        transform:translateY(0)
+    }
+}
+@keyframes hov {
+    0% {
+        -webkit-transform:translateY(0);
+        transform:translateY(0)
+    }
+    33% {
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px)
+    }
+    70% {
+        -webkit-transform:translateY(-5px);
+        transform:translateY(-5px)
+    }
+    100% {
+        -webkit-transform:translateY(0);
+        transform:translateY(0)
+    }
+}
+@-moz-keyframes bite {
+    0%, 49% {
+        -moz-transform:scale(0);
+        transform:translateY(0);
+        box-shadow: 40px 40px #222;
+    }
+    50%, 74% {
+        -moz-transform:scale(1.25);
+        transform:translateY(1.25);
+        box-shadow: 25px 25px #222;
+    }
+    75%, 100% {
+        -moz-transform:scale(1.5);
+        transform:translateY(1.5);
+        box-shadow: 20px 20px #222;
+    }
+}
+@-webkit-keyframes bite {
+    0%, 49% {
+        -webkit-transform:scale(0);
+        transform:translateY(0);
+        box-shadow: 40px 40px #222;
+    }
+    50%, 74% {
+        -webkit-transform:scale(1.25);
+        transform:translateY(1.25);
+        box-shadow: 25px 25px #222;
+    }
+    75%, 100% {
+        -webkit-transform:scale(1.5);
+        transform:translateY(1.5);
+        box-shadow: 20px 20px #222;
+    }
+}
+@keyframes bite {
+    0%, 49% {
+        transform:translateY(0);
+        box-shadow: 40px 40px #222;
+    }
+    50%, 74% {
+        transform:translateY(1.25);
+        box-shadow: 25px 25px #222;
+    }
+    75%, 100% {
+        transform:translateY(1.5);
+        box-shadow: 20px 20px #222;
+    }
+}
+h1{
+color:red;
+
+left:200px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+<h1>Its for you</h1>
+  <div class="wrap">
+    <div class="choc"></div>
+    <div class="block"></div>
+    <div class="block"></div>
+    <div class="block"></div>
+    <div class="wrapper"></div>
+</div>
+</div>
+
+</body>
+</html>
